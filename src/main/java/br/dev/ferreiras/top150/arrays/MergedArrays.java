@@ -21,10 +21,9 @@ public class MergedArrays {
 
   public static void merge(int[] nums1, int m, int[] nums2, int n) {
 
-    for (int j = 0, i = m; j < n; j++, i++) {
-      nums1[i] = nums2[j];
-      logger.info("nums1[i] -> {}", nums1[i]);
-
+    for (int i = 0, j = m; i < n; j++, i++) {
+      nums1[j] = nums2[i];
+      logger.info("nums1[j] -> {}", nums1[j]);
     }
 
     Arrays.sort(nums1);
