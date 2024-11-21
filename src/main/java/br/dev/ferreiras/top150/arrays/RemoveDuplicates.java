@@ -116,7 +116,6 @@ public class RemoveDuplicates {
     }
     System.out.println(Arrays.toString(numbers));
 
-
     return j;
   }
 }
